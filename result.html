@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Employee Result</title>
+</head>
+
+<body>
+
+<h1>Welcome {{ name }}</h1>
+
+<h2>Department: {{ department }}</h2>
+
+<h3>Tasks:</h3>
+
+<ul>
+
+{% for task in tasks %}
+
+<li>{{ task }}</li>
+
+{% endfor %}
+
+</ul>
+
+<h3>Email: {{ email }}</h3>
+
+<h3>Employee ID: {{ employee_id }}</h3>
+
+</body>
+</html>
